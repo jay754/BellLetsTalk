@@ -36,7 +36,7 @@ if __name__ == '__main__':
 		#still can be improved
 		time.sleep(2)
 
-		if count > 5:
+		if count > 10:
 			break
 
 		count +=1
