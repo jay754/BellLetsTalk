@@ -7,9 +7,13 @@ import urllib2
 def getRandomData():
 	url = "http://numbersapi.com/random?json"
 	results = json.load(urllib2.urlopen(url))
-	data = str(results["text"].replace(".","?"))
+	#data = str(results["text"].replace(".","?"))
+	data = str(results["text"]) + "#BellLetsTalk"
 
-	return data
+	if len(data) < 140:
+		return data
+	else:
+		getRandomData()
 
 def main():
 
@@ -21,7 +25,18 @@ def main():
 	#print api.VerifyCredentials()
 
 	results = getRandomData()
-	statusupdate = "Did you know that " + results + "#BellLetsTalk"
-	status = api.PostUpdate(statusupdate)
+	status = api.PostUpdate(results)
 
-main()
+if __name__ == '__main__':
+	count = 1
+	while True:
+		main()
+
+		print count
+		#still can be improved
+		time.sleep(2)
+
+		if count > 5:
+			break
+
+		count +=1
