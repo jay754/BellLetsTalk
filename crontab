@@ -1,0 +1,1 @@
+*/5 * * * * /usr/bin/python /Users/jay/Documents/github/bellbot/src/__init__.py
