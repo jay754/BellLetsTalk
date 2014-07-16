@@ -4,6 +4,14 @@ import time
 import requests
 import urllib2
 
+"""
+
+Twitter Bot
+
+License: Do whatever you want
+
+"""
+
 def check_request(url):
     try:
         return requests.get(url).status_code
