@@ -49,4 +49,4 @@ def main(**kwargs):
 			break
 
 if __name__ == '__main__':
-	print main(consumer_key="Q2EGXTPpwqeIfrvQiHUAQ", consumer_secret='2QkSVjD7lW3fsTsX0wU3Q8jrRsYKFLCkZBUZv77ZuCA', access_token_key='606652366-3a0ieR32ysCusf5ANdU0ukwF8ORCVcz0lsYjCilz', access_token_secret='icI8PQK0dt36Kzi1USyASOzeO18YuPEMGdYWjwnXooJJu')
+	print main(consumer_key="", consumer_secret="", access_token_key="", access_token_secret="")
